@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0479f82a-32df-4012-84fa-9a68b1c7727f}</ProjectGuid>
+    <ProjectGuid>{82b6fe10-9c10-4234-8df7-6b3a1b9b9108}</ProjectGuid>
     <RootNamespace>UserDataTypes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Sandwich.cpp" />
+    <ClCompile Include="..\DataTypes\Employee.cpp" />
     <ClCompile Include="UserDataTypes.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sandwich.h" />
+    <ClInclude Include="Employee.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
