@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumberGuessingGame", "Numbe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageClasses", "ImageClasses\ImageClasses.vcxproj", "{79A240B1-03C8-470C-8A4D-CA90C672BC07}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataTypes", "DataTypes\DataTypes.vcxproj", "{EE6C5AE9-DBBE-4A78-810D-4AA428A7722C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{79A240B1-03C8-470C-8A4D-CA90C672BC07}.Release|x64.Build.0 = Release|x64
 		{79A240B1-03C8-470C-8A4D-CA90C672BC07}.Release|x86.ActiveCfg = Release|Win32
 		{79A240B1-03C8-470C-8A4D-CA90C672BC07}.Release|x86.Build.0 = Release|Win32
+		{EE6C5AE9-DBBE-4A78-810D-4AA428A7722C}.Debug|x64.ActiveCfg = Debug|x64
+		{EE6C5AE9-DBBE-4A78-810D-4AA428A7722C}.Debug|x64.Build.0 = Debug|x64
+		{EE6C5AE9-DBBE-4A78-810D-4AA428A7722C}.Debug|x86.ActiveCfg = Debug|Win32
+		{EE6C5AE9-DBBE-4A78-810D-4AA428A7722C}.Debug|x86.Build.0 = Debug|Win32
+		{EE6C5AE9-DBBE-4A78-810D-4AA428A7722C}.Release|x64.ActiveCfg = Release|x64
+		{EE6C5AE9-DBBE-4A78-810D-4AA428A7722C}.Release|x64.Build.0 = Release|x64
+		{EE6C5AE9-DBBE-4A78-810D-4AA428A7722C}.Release|x86.ActiveCfg = Release|Win32
+		{EE6C5AE9-DBBE-4A78-810D-4AA428A7722C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
