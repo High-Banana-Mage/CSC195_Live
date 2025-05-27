@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Database", "Database\Databa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Classes", "Classes\Classes.vcxproj", "{79C02E7E-07B1-4A84-BAA8-171D5FC80C7A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fail", "Fail\Fail.vcxproj", "{8C310EE9-E1C8-4F86-8C71-4E50EB155EB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{79C02E7E-07B1-4A84-BAA8-171D5FC80C7A}.Release|x64.Build.0 = Release|x64
 		{79C02E7E-07B1-4A84-BAA8-171D5FC80C7A}.Release|x86.ActiveCfg = Release|Win32
 		{79C02E7E-07B1-4A84-BAA8-171D5FC80C7A}.Release|x86.Build.0 = Release|Win32
+		{8C310EE9-E1C8-4F86-8C71-4E50EB155EB3}.Debug|x64.ActiveCfg = Debug|x64
+		{8C310EE9-E1C8-4F86-8C71-4E50EB155EB3}.Debug|x64.Build.0 = Debug|x64
+		{8C310EE9-E1C8-4F86-8C71-4E50EB155EB3}.Debug|x86.ActiveCfg = Debug|Win32
+		{8C310EE9-E1C8-4F86-8C71-4E50EB155EB3}.Debug|x86.Build.0 = Debug|Win32
+		{8C310EE9-E1C8-4F86-8C71-4E50EB155EB3}.Release|x64.ActiveCfg = Release|x64
+		{8C310EE9-E1C8-4F86-8C71-4E50EB155EB3}.Release|x64.Build.0 = Release|x64
+		{8C310EE9-E1C8-4F86-8C71-4E50EB155EB3}.Release|x86.ActiveCfg = Release|Win32
+		{8C310EE9-E1C8-4F86-8C71-4E50EB155EB3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
