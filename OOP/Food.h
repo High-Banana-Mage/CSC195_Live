@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+using namespace std;
 
 class Food
 {
@@ -19,7 +21,6 @@ public:
 	}
 
 	//Deconstructor used to deallocate memory
-	~Food();
 
 
 	void Consume();

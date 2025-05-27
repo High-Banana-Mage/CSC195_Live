@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{dda4df30-f456-4c4b-8673-238c1bf544d4}</ProjectGuid>
-    <RootNamespace>OOP</RootNamespace>
+    <ProjectGuid>{79c02e7e-07b1-4a84-baa8-171d5fc80c7a}</ProjectGuid>
+    <RootNamespace>Classes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,15 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Burger.cpp" />
-    <ClCompile Include="Food.cpp" />
-    <ClCompile Include="Fruit.cpp" />
-    <ClCompile Include="OOP.cpp" />
+    <ClCompile Include="Car.cpp" />
+    <ClCompile Include="Classes.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="Vehicle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Burger.h" />
-    <ClInclude Include="Food.h" />
-    <ClInclude Include="Fruit.h" />
+    <ClInclude Include="Car.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
