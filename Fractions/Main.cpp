@@ -1,11 +1,12 @@
-#include <iostream>
 #include "Fraction.h"
+#include <iostream>
+
 
 using namespace std;
+using namespace mathlib;
 
 int main()
 {
-    using namespace mathlib;
 
     Fraction<int> fraction1{ 15, 5 };
     cout << fraction1 << endl;
