@@ -15,18 +15,20 @@ public:
 
 protected:
 	int m_health;
-	e_Type m_name;
+	string m_name;
+	e_Type m_type;
 
 public:
 	int getHealth() { return m_health; }
-	e_Type getName() { return m_name; }
+	string getName() { return m_name; }
+	e_Type getType() { return m_type; }
 
 	virtual void Read(istream& istream);
 	virtual void Write(ostream& ostream);
 
 	friend istream& operator>> (istream& istream, Monster& monster);
 	friend ostream& operator<< (ostream& ostream, Monster& monster);
-	friend istream& operator >> (istream& istream, Monster& monster);
-	friend ostream& operator << (ostream& ostream, Monster& monster);
+	friend ifstream& operator >> (ifstream& istream, Monster& monster);
+	friend ofstream& operator << (ofstream& ostream, Monster& monster);
 };
 

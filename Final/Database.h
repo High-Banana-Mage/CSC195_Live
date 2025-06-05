@@ -16,6 +16,9 @@ private:
 	unique_ptr<Monster> Create(Monster::e_Type type);
 public:
 	void Add(Monster::e_Type type);
-	void Load(const std::string& filename);
-	void Save(const std::string& filename);
+	void Load(const string& filename);
+	void Save(const string& filename);
+	void DisplayAll();
+	void Display(const string& name);
+	void Display(Monster::e_Type type);
 };

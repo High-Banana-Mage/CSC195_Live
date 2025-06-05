@@ -14,7 +14,6 @@ unique_ptr<Monster> Database::Create(Monster::e_Type type)
     default:
         break;
     }
-    obj->Read(cin);
     return obj;
 }
 
@@ -23,7 +22,7 @@ void Database::Add(Monster::e_Type type)
     unique_ptr<Monster> monster = Create(type);
 
     monster->Read(cin);
-    m_container.push_back(monster);
+    m_container.push_back(move(monster));
 }
 
 void Database::Load(const string& filename)
@@ -37,8 +36,8 @@ void Database::Load(const string& filename)
                 int type;
                 input >> type;
                 unique_ptr<Monster> monster = Create(static_cast<Monster::e_Type>(type));
-                monster->Read(cin);
-                m_container.push_back(monster);
+                monster->Read(input);
+                m_container.push_back(move(monster));
             }
     }
 }
@@ -48,12 +47,44 @@ void Database::Save(const string& filename)
     ofstream output(filename);
     if (output.is_open())
     {
-        //use for loop to iterate through all animals in the container
         for(int i = 0; i < m_container.size(); i++)
         {
 
-            output << get animal type and cast to int to write << endl;
-            <call animal Write with the file output stream>
+            m_container[i]->Write(output);
+            output << endl;
+        }
+    }
+}
+
+void Database::DisplayAll()
+{
+    for (int i = 0; i < m_container.size(); i++)
+    {
+        m_container[i]->Write(cout);
+    }
+}
+
+void Database::Display(const string& name)
+{
+    for (int i = 0; i < m_container.size(); i++)
+    {
+        if (m_container[i]->getName() == name)
+        {
+            m_container[i]->Write(cout);
+            cout << endl;
+        }
+    }
+}
+
+void Database::Display(Monster::e_Type type)
+{
+    for (int i = 0; i < m_container.size(); i++)
+    {
+        if (m_container[i]->getType() == type)
+        {
+            m_container[i]->Write(cout);
+            cout << endl;
+            break;
         }
     }
 }
