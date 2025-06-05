@@ -1,10 +1,10 @@
 #pragma once
 #include "Monster.h"
-class Zombie :
+class Skeleton :
     public Monster
 {
 private:
-    int m_lives;
+    bool m_hasBow;
 
 public:
     void Read(ifstream& istream);

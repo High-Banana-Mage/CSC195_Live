@@ -11,6 +11,7 @@ namespace mathlib {
     private:
         T num, den;
 
+        //I used claude to help me find a formula to get the gcd
         T gcd(T a, T b) {
             if (a < 0) a = -a;
             if (b < 0) b = -b;
@@ -22,7 +23,17 @@ namespace mathlib {
             return a;
         }
 
-        void normalize() {
+    public:
+        Fraction(T numerator = 0, T denominator = 1) : num(numerator), den(denominator) {
+            if (den == 0) {
+                throw invalid_argument("Denominator cannot be zero");
+            }
+        }
+
+        T getNumerator() const { return num; }
+        T getDenominator() const { return den; }
+
+        Fraction& simplify() {
             T g = gcd(num, den);
             if (g > 1) {
                 num /= g;
@@ -33,21 +44,6 @@ namespace mathlib {
                 num = -num;
                 den = -den;
             }
-        }
-
-    public:
-        Fraction(T numerator = 0, T denominator = 1) : num(numerator), den(denominator) {
-            if (den == 0) {
-                throw invalid_argument("Denominator cannot be zero");
-            }
-            normalize();
-        }
-
-        T getNumerator() const { return num; }
-        T getDenominator() const { return den; }
-
-        Fraction& simplify() {
-            normalize();
             return *this;
         }
 
@@ -99,7 +95,7 @@ namespace mathlib {
         friend istream& operator>>(istream& is, Fraction& f) {
             T numerator, denominator = 1;
             char slash;
-
+            //I used Claude to help me extract the fraction
             is >> numerator;
             if (is.peek() == '/') {
                 is >> slash >> denominator;

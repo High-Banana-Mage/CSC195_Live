@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 
+int num = 5;
+
 int main()
 {
-	cout << "Hello World!" << endl;
+	num = 10;
 }
