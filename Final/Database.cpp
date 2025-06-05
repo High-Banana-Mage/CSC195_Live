@@ -21,7 +21,8 @@ void Database::Add(Monster::e_Type type)
 {
     unique_ptr<Monster> monster = Create(type);
 
-    monster->Read(cin);
+
+    cin >> *monster;
     m_container.push_back(move(monster));
 }
 
@@ -50,6 +51,7 @@ void Database::Save(const string& filename)
         for(int i = 0; i < m_container.size(); i++)
         {
 
+            output << static_cast<int>(m_container[i]->getType());
             m_container[i]->Write(output);
             output << endl;
         }
@@ -60,7 +62,7 @@ void Database::DisplayAll()
 {
     for (int i = 0; i < m_container.size(); i++)
     {
-        m_container[i]->Write(cout);
+        cout << *m_container[i];
     }
 }
 
@@ -70,7 +72,7 @@ void Database::Display(const string& name)
     {
         if (m_container[i]->getName() == name)
         {
-            m_container[i]->Write(cout);
+            cout << *m_container[i];
             cout << endl;
         }
     }
@@ -82,7 +84,7 @@ void Database::Display(Monster::e_Type type)
     {
         if (m_container[i]->getType() == type)
         {
-            m_container[i]->Write(cout);
+            cout << *m_container[i];
             cout << endl;
             break;
         }
